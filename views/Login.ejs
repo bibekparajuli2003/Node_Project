@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150vh;
+    }
+
+    .login-form {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-form input[type="submit"] {
+      width: 30%;
+      padding: 13px;
+      background-color: #4c6aaf;
+      color: #fff;
+      border: color-mix(in hsl shorter hue, color percentage, color percentage);
+      border-radius: 5px;
+      cursor: pointer;
+      
+    }
+
+    .login-form input[type="submit"]:hover {
+      background-color: #4580a0;
+    }
+
+    .login-form p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .login-form .error-message {
+      color: #ff0000;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.social-media {
+  margin-top: 30px;
+  margin-right: 200px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+.social-logo{
+  display: flex;
+  margin-left: 250px;
+}
+
+.social-logo .logo1 {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+}
+.social-logo .logo2{
+  width: 50px;
+  height: 50px;
+  margin-right: 250px;
+}
+
+
+.forgot-password {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.forgot-password a {
+  color: #f00ff4;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="login-form" method="post" action="login.php">
+      <h2>Login Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="username" placeholder="Enter a Name" required>
+      <label for="name">Password:</label>
+      <input type="password"  id="password" name="password" placeholder="Enter a Password" required>
+      <input type="submit" value="Login">
+      <p>Or sign up with:</p>
+
+      <div class="social-logo">
+      <a href="#" title="Sign up with Facebook">
+      <img class="logo1" src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="Facebook Logo">
+       </a>
+     
+       <a href="#" title="Sign up with instagram">
+      <img class="logo2" src="https://cdn-icons-png.flaticon.com/128/1384/1384031.png" alt="Google Logo">
+    </a>
+    </div>
+    
+    <p>Forgot your password? <a href="/forgot-password">Click here </a></p>
+      <p>Don't have an account? <a href="Register">Sign up</a></p>
+     
+    </form>
+  </div>
+</body>
+</html>

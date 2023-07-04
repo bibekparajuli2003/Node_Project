@@ -1,0 +1,230 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150vh;
+    }
+
+    .login-form {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-form input[type="submit"] {
+      width: 30%;
+      padding: 13px;
+      background-color: #4c6aaf;
+      color: #fff;
+      border: color-mix(in hsl shorter hue, color percentage, color percentage);
+      border-radius: 5px;
+      cursor: pointer;
+      
+    }
+
+    .login-form input[type="submit"]:hover {
+      background-color: #4580a0;
+    }
+
+    .login-form p {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .login-form .error-message {
+      color: #ff0000;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.social-media {
+  margin-top: 30px;
+  margin-right: 200px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 250px;
+ 
+}
+
+
+
+.forgot-password {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.forgot-password a {
+  color: #f00ff4;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="login-form" method="post" action="login.php">
+      <h2>Login</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="username" placeholder="Enter a Name" required>
+      <label for="name">Password:</label>
+      <input type="password"  id="password" name="password" placeholder="Enter a Password" required>
+      <input type="submit" value="Login">
+      <p>Or sign up with:</p>
+      <div>
+    <a href="#" title="Sign up with Facebook">
+      <img class="logo" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/121_Facebook_logo_logos-256.png" alt="Facebook Logo">
+    </a>
+    <a href="#" title="Sign up with Google">
+      <img class="logo" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/62-instagram-128.png" alt="Google Logo">
+    </a>
+    </div>
+    
+    <p>Forgot your password? <a href="/forgot-password">Click here </a></p>
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+     
+    </form>
+  </div>
+</body>
+</html>
+ --> 
+
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form div {
+        margin: 15px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="file"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+        margin-right: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <form action="Registration" method="post">
+      <h2>Registration Form</h2>
+        <div>
+            <label for="name">User Name:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">    
+        </div>
+        <div>
+            <label for="image">Choose an image:</label>
+            <input type="file" id="image" name="image"> 
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" id="maleGender">
+            <label for="maleGender">Male</label>
+            <input type="radio" name="gender" value="Female" id="femaleGender">
+            <label for="femaleGender">Female</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+</html>
